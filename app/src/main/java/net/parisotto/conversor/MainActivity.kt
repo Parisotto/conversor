@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     fun iniciar(){
         val textViewMsg: TextView = findViewById(R.id.textViewMsg)
         val textViewContador: TextView = findViewById(R.id.textViewContador)
-        textViewMsg.text = "Contador Iniciado!"
+        textViewMsg.text = "Cronômetro Iniciado!"
         timer?.cancel()
 
 
@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
+                textViewMsg.text = "Cronômetro Zerado"
                 textViewContador.text = "0"
-
             }
         }
 
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     fun parar(){
         val textViewMsg: TextView = findViewById(R.id.textViewMsg)
         val textViewContador: TextView = findViewById(R.id.textViewContador)
-        textViewMsg.text = "Contador Parou!"
+        textViewMsg.text = "Cronômetro Parado!"
         timer?.cancel()
     }
 }
