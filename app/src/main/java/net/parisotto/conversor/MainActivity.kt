@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onFinish() {
                 textViewContador.text = "0"
+
             }
         }
 
